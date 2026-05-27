@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> AuthToken </title>
+    <!-- <link rel="icon" href="login.png"> -->
+    <style>
+        input{
+            font-style: italic;
+            font-family: 'Lucida Sans';
+            color: blue;
+            border-radius: 15px;
+            width: 100;
+            height: 49;
+            background-color: bisque;
+        }
+        input:hover{
+            box-shadow: 5px 5px 3px burlywood;
+        }
+          #border1:hover{
+            border-color: brown;
+            color: brown;
+          }
+          #border2:hover{
+            border-color: red;
+            color: red;
+          }
+          #wrongBtn{
+            color: brown;
+
+          }
+          
+</style>
+</head>
+<center>
+    <h1 id ="header" style="font-family: cursive;">Please login</h1>
+    <h2> click on appropriate login Button for AuthToken</h2>
+    <input type="button" value="login" onclick="wrongBtn()" id="border1">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="login" onclick="login()" id="border2">
+    <h2 id="wrongBtn"></h2>
+</center>
+<script src="authToken.js"></script>
+</head>
+</html>

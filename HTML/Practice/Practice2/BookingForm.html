@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        sup{
+            color: red;
+        }
+        .formtag{
+            text-align: center;            
+        }
+        input:focus{
+            background-color: green;
+            box-shadow: 8px 5px 12px black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hotel Booking Form</h2>
+    <form action="" class="formtag">
+        <table>
+            <tr>
+                <td>Full name <sup>*</sup></td>
+                <td>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Email <sup>*</sup></td>
+                <td>:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number <sup>*</sup></td>
+                <td>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>No of guests <sup>*</sup></td>
+                <td>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

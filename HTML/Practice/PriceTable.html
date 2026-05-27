@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priceing Table</title>
+    <style>
+       body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        background-color: beige;
+       }
+       .pricing-selection {
+         padding: 40px 20px;
+         text-align: center;
+       }
+       .pricing-container {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+       }
+       .card{
+        background: rgb(156, 198, 214) ;
+        border-radius: 10px;
+        padding: 20px;
+        width: 280px;
+        box-shadow: 0 4px 10px ;
+        transition: transform 0.3s,box-shadow 0.3s;        
+        margin-top: 10px 0;
+       }
+       .card:hover{
+        transform:scale(1.1);
+        box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+       }
+       .recommended-badge{
+        background: rgb(128, 172, 128);
+        color: rgb(126, 151, 189);
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        /* display: inline-block; */
+        margin-bottom: 10px;
+       }
+       h2{
+        margin: 10px 0;
+       }
+       .price{
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: bold;
+       }
+       button{
+        background: rgb(89, 89, 161);
+        color: whitesmoke;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+       }
+       button:hover{
+        background: #0056b3;
+       }
+       @media(max-width:768px) {
+        .price-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+       }
+       .recommended{
+          border:2px solid black
+          
+       }
+    </style>
+</head>
+<body>
+  
+    <section class="pricing-selection">
+        <h1>Our Pricing Plans</h1>
+
+        <div class="pricing-container">
+        <div class="card">
+            <h2>Basic</h2>
+            <p class="price">9rs/month</p>
+            <div>
+                1 user
+               <div> Basic support</div>
+            </div>
+            <button>Buy now</button>
+        </div>
+        <div class="card">
+            <h1>Pro</h1>
+            <p class="Price">99rs/month</p>
+                <div>6 User</div>
+                <div>Priority Support</div>
+                <div>Advanced Features</div>
+                <div>
+                <button>Buy now</button>
+                </div>
+        </div>
+        <div>
+                <div class="card">
+                <h1>Enterprise</h1>
+                <p class="price">222rs/month</p>
+                <div>Unlimited user</div>
+                <div>24/7 Support</div>
+            <button> buy now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+        </section>
+        </body>
+        </html>
+        

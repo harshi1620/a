@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshi food stall</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(195, 235, 235);
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;            
+            background-color: aquamarine;
+        }
+        nav h2:hover{
+            color: bisque;
+            cursor: pointer;
+        }
+        footer{
+            display: flex;
+            position: absolute;
+            justify-content: space-evenly;
+            align-items: center;
+            top: auto;
+            background-color: rgb(197, 167, 224);
+            height: 45.5px;
+            width: 100%;
+            /*margin-top:5px;*/
+        }
+        .container2{ 
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .items{
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: aquamarine;
+            border-radius: 5px;
+        }
+        .items:hover{
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+            background-color: beige;
+        }
+        #login{
+            height: 30px;
+            width: 80px;
+            background-color: greenyellow;
+            border-radius: 5px;
+        }
+        #login:hover{
+            background-color: lightsalmon;
+            cursor: pointer;
+        }
+        img{
+            height: 150px;
+            width:150px
+        }
+        .button{
+            background-color:rgb(34, 126, 184)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h2>Home</h2>
+            <h2>Services</h2>
+            <h2>About</h2>
+            <h2>Contact</h2>
+
+         <button id="login">Login</button>
+        </nav>
+             <div class="body-area">
+                <h2>Delivery Point</h2>
+
+             </div>
+             <main><div class="container2">
+                <div class="items">
+                    <img src="./pongal.PNG" alt="image not found">
+                    <h4>Pongal</h4>
+                    <p>60rs</p>
+                    <p>Rating:4*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="./idly.avif" alt="">
+                    <h4>Idly</h4>
+                    <p>40rs</p>
+                    <p>Rating:5*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="./Dosa.webp" alt="image">
+                    <h4>Dosa</h4>
+                    <p>50rs</p>
+                    <p>Rating:5*</p>
+                    <button>Add</button>
+                </div>
+                     <div class="items">
+                    <img src="./Chapati.jpg"alt="not found">
+                    <h4>Chapathi</h4>
+                    <p>70rs</p>
+                    <p>Rating:5*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="upma.jpg"alt="not found">
+                    <h4>Upma</h4>
+                    <p>40rs</p>
+                    <p>Rating:4*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="./ghee idly.jfif">
+                    <h4>ghee Idly</h4>
+                    <p>55rs</p>
+                    <p>Rating:5*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="./non veg.jfif" alt="not found">
+                    <h4>Non-Veg</h4>
+                    <p>100rs</p>
+                    <p>Rating:3*</p>
+                    <button>Add</button>
+                </div>
+                <div class="items">
+                    <img src="./veg.avif"alt="not found">
+                    <h4>Veg</h4>
+                    <p>100rs</p>
+                    <p>Rating:5.5*</p>
+                    <button>Add</button>
+                </div>
+                   <div class="items">  
+                    <img src="./street food.avif"# alt="not found">
+                    <h4>Street food</h4>
+                    <p>100rs</p>
+                    <p>Rating:8*</p>
+                    <button>Add</button>
+                </div>
+             </div></main>
+    </div>
+         <footer>
+               <a href="#">Facebook</a> <a href="#">Instagram</a><a href="#">DeliveryPoint</a>               
+         </footer>
+        </body>
+</html>

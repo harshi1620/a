@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://picsum.photos/id/1015/400/250" alt="" id="slider"><br><br>
+    <button id="prev">Previous</button>
+    <button id="nxt">Next</button>
+    <script>
+        images = [
+            'https://picsum.photos/id/1015/400/250',
+            'https://picsum.photos/id/1025/400/250',
+            'https://picsum.photos/id/1035/400/250'
+            ]
+            let slider = document.getElementById('slider')
+            let index = 0
+            document.getElementById('nxt').addEventListener('click',function(){
+                index++
+                if(index>=images.length){
+                    index=0
+                }
+                slider.src=images[index]
+            })
+            document.getElementById('prev').addEventListener('click',function(){
+                index--
+                if(index<0){
+                    index=images.length-1
+                }
+                slider.src=images[index]
+            })
+    </script>
+</body>
+</html>

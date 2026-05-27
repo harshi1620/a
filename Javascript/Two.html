@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Operators: are special symbols or keywods used to perform actions on values and variables
+    types:
+    1) Arithmetic  :- +, -, *, /, %
+    2) Assignment :- =,+=,-=,*=,/=
+    3) Comparision :- ==, ===, !=, >, <, >=,<=
+    4) Logical :- &&, ||, !
+    5) Ternary :- condition ? true : false -->
+    <script>
+        let a = 10
+        let b = 20
+        console.log(a+b)
+        document.write(a+b)
+        let age =20
+        age>18 ? document.write('Eligible for voting'):document.write('Not eligible')
+        
+
+        let c = 10
+        let d = 10
+        console.log(c===d)
+
+        let e = 11
+        let v = 12
+        document.write(e < v && v > 11)
+
+        // == --> checks the values
+        // === ---> checks the value as well the type of value 
+        let x = 5  
+        console.log(x)     
+        document.write(!(x>2)) 
+
+        let username = "admin"
+        let password = "1234"
+        document.write(username == "admin" && password == "1234")
+
+        let math = 30
+        let science = 50
+        let total = math + science
+        document.write(total)
+
+        let attend = 60
+        document.write(attend>=60)
+
+        // if else : its make decision
+         let marks = 30
+         if (marks>=35) {
+            document.write("pass")
+         }
+         else{
+            document.write("fail")
+         }
+    </script>
+    <script>
+        let number = +10
+        if (number >11){
+            document.write("Positive")
+        }
+        else{
+            document.write("Negative")
+        }
+
+        // switch: used to choose one block of code from many option
+
+        let day = 1;
+      switch(day) {
+    case 1:
+      document.write("Monday")
+      break;
+
+   case 2:
+      document.write("Tuesday")
+      break;
+
+   case 3:
+      document.write("Wednesday")
+      break;
+
+   default:
+      document.write("Invalid Day")
+    }
+
+
+    
+
+let operator = "+";
+
+switch(operator) {
+
+   case "+":
+      document.write(10 + 5);
+      break;
+
+   case "-":
+      document.write(10 - 5);
+      break;
+
+   case "*":
+      document.write(10 * 5);
+      break;
+
+   default:
+      document.write("Invalid Operator");
+}
+
+</script>
+    </script>
+</body>
+</html>

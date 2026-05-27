@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width:10% ;
+            padding: 10px;   
+            background: slateblue;
+            /* border: solid black; */
+            color: aliceblue;
+            border-radius: 10px;
+            
+        }
+        button:hover{
+            background: darkblue;
+        }
+        body{
+            background:  rgb(230, 156, 168);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .form-box{
+            width: 100%;
+            max-width: 600px;
+            background: rgb(97, 94, 94);
+            padding: 20px;
+            margin: 50px;
+            border-radius: 10px;
+        }
+        input,textarea{
+            padding: 10px;
+            width: 200px;
+            margin: 8px 0;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        
+    </style>
+ </head>
+ <body>
+    <div class="Form-box"> 
+        <h2>Contact Form</h2>
+        <div>
+            <input type="text" placeholder="Full name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="num" placeholder="Phone num"><br>
+            <textarea placeholder="Message" required></textarea><br>
+           <center>
+            <button type="submit">Submit</button>
+           </center>
+            <!-- <button type="submit">Submit</button> -->
+        </div>
+    </div>
+ </body>
+ </html>

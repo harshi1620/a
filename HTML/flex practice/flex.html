@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin:0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            min-height: 100px;
+        }
+        .logo{
+            background: #aaa;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        .nav{
+            background: #888 ;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+        .head {
+            background: #888;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar{
+             width: 25%;
+             height: 100px;
+             background: rgb(199, 137, 147);
+             padding: 20px; 
+             
+        }
+        .body {
+            flex: 1;
+            background: rgb(80, 83, 80);
+            padding: 20px;
+            height: 100px;
+        }
+        .footer{
+            background: #999;
+            padding: 15px;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">logo</div>
+        <div class="nav">Navigation</div>
+        <div class="head">Header/Banner</div>
+
+        <div class="main">
+            <div class="sidebar">Sidebar</div>
+            <div class="body"> Body Area</div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>

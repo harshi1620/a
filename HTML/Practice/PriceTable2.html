@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;            
+        }
+        .cards{
+            border: 2px solid black;
+            height: 200px;
+            width: 150px;
+            align-content: center;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .cards:hover{
+            background-color: bisque;
+        }
+        .standard{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <h1>Basic</h1>
+            <p>1 user</p>
+            <p>99rs/month</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="cards standard">
+            <h1>Pro</h1>
+            <p>4 user</p>
+            <p>199rs/month</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="cards">
+            <h1>Pro+</h1>
+            <p>5 user</p>
+            <p>299rs/month</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

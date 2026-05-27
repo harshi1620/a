@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array elements</title>
+</head>
+<body>
+    <script>
+    //Arrays:- an array is collection of variables
+    let nyb = [1,2]
+    nyb.push(3)
+    nyb.unshift('harshitha')
+    // nyb.splice(2,2,5)
+    // console.log(nyb.includes(5))
+    // console.log(nyb.indexOf('harshitha'))
+    // nyb.pop()
+    // nyb.shift()
+    // nyb.splice(0,1)
+    // nyb.length = 0
+    
+    console.log(nyb)
+    let a=[1,2,3,4]
+    let b=[5,6,7,8]
+    // console.log(a.concat(b))
+    // console.log([...a,...b])
+    let copy=[...a]
+    console.log(copy)
+    copy.forEach(item=>{
+        console.log(item)
+    })
+    let arr = ['java','script']
+    console.log(arr.join('-'))
+    let num = [4,1,7,10,5,2]
+    console.log('ascendingOrder',num.sort((a,b)=>a-b))
+    console.log('even',num.filter(n=>n%2==0))
+    console.log('map',num.map(n=>n*n))
+    console.log(num.reduce((sum,n)=>sum+n,0))
+    let flatt = [1,[2,[3,[4]]]]
+    console.log(flatt.flat(3))
+    // removingDuplicates
+    let dup = [1,2,2,3,3]
+    console.log(...new Set(dup))
+    // forEach vs map
+    // returns undiefined      returns new array
+    let str = 'hello'
+    console.log(Array.from(str))
+
+
+
+    //rest operattor
+function demo1(a,b,...c){
+console.log(a)
+console.log(b)
+console.log(c)
+}
+demo1(10,20,30,40,50,60,70,80) //restOperator isused to collect multiple arguments
+    </script>
+    
+   
+</body>
+</html>

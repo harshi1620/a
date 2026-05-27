@@ -1,0 +1,26 @@
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Second Largest Number</title>
+</head>
+<body>
+
+  <h2>Second Largest Number</h2>
+
+  <script>
+    function findSecondLargest(arr) {
+
+            let uniqueArr = [...new Set(arr)].sort((a, b) => b - a);
+
+      return uniqueArr[1];
+    }
+
+    let numbers = [10, 20, 5, 8, 30];
+
+
+    document.write("Second Largest Number: " + findSecondLargest(numbers));
+  </script>
+
+</body>
+</html>

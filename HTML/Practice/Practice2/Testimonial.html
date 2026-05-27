@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+        .item{
+            border: 2px solid black;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: azure;
+        }
+        .item:hover{
+            background-color: beige;
+            transform: scale(1.01);
+            transition: trasnform 0.5s ease;
+        }
+        @media (max-width:969px) and (orientation: landscape) {
+            .container{
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+         @media (max-width:768px) and (orientation: portrait){
+            .container{
+                grid-template-columns:repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Testimonial form</h2>
+    <div class="container">
+        
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+        <div class="item">
+            <img src="#" alt="no image found">
+            <h4>harshitha</h4>    
+            <p>good</p>
+            <p>3 star</p>                
+        </div>
+    </div>
+</body>
+</html>

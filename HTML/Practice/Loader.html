@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            height: 20px;
+            width: 20px;
+            border: 2px solid #ddd;            
+            border-radius: 50%;
+            border-top: 2px solid blue;
+            animation: spin 1s infinite linear;
+        }
+        @keyframes spin {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>   

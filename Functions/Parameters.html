@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+ </head>
+ <body>
+        <input type="password" id="pass">
+        <button onclick="checkLength(8)">
+    <!-- Check Password -->
+     </button>
+    <button onclick="sumNumbers(10, 20, 30, 40)">Calculate Sum</button>
+
+
+
+<button onclick="showMessage('Welcome to HTML')">
+    Show Message
+        <button onclick="console.log(add(55,123))">click</button>
+        <button onclick="greet('John')">click</button>
+<script>
+    function greet(name){
+        console.log("hello"+name)
+    }
+
+
+    function add(a,b){
+        return a+b
+        
+    }
+    //   let result = add (55,123);
+    console.log("welcome")
+
+    // Rest Parameter:---
+
+function sumNumbers(...numbers) {
+    let sum = 0;
+
+    for (let num of numbers) {
+        sum += num;
+    }
+
+    console.log("Sum = " + sum);
+}
+
+  
+function checkLength(minLength) {
+    let password =
+        document.getElementById("pass").value;
+
+    if(password.length >= minLength) {
+        console.log("Valid Password");
+    } else {
+        console.log("Password too short");
+    }
+} 
+
+
+// Scope Parameter:--
+
+function add(a, b) {
+    let total = a + b;
+    console.log(total);
+}
+
+add(125, 20);
+
+
+
+let school = "ABC School"; // global
+
+function hars(name) {
+    let grade = "10th"; // local
+
+    console.log(name);
+    console.log(grade);
+    console.log(school);
+}
+
+hars("Rahul");
+
+// Hoisting Parameter:--
+
+sayHello();
+
+function sayHello() {
+    console.log("Hello");
+}
+
+function add(a, b) {
+    console.log(a);
+    console.log(b);
+    console.log(a + b);
+}
+
+add(111, 20);
+
+var x;
+
+console.log(x)
+
+x = 10
+
+
+
+    </script>
+ </body>
+ </html>

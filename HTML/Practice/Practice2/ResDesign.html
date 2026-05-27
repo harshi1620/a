@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: aquamarine;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:cadetblue;
+            font-size: 30px;
+            height: 80px;
+        }
+        nav li{
+            cursor: pointer;
+        }
+        nav li:hover{
+            color: blue;
+        }
+        li{
+            list-style-type: none;
+        }
+        footer{
+            display: flex;
+            position: absolute;
+            justify-content: space-evenly;
+            top: auto;
+            background-color: gray;
+            height: 35px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        .container2{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,1fr);            
+        }
+        .items{
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+        .items:hover{
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+            background-color: lightcyan;
+        }
+        @media (max-width:968px) {
+            .container2{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width:768px) {
+            .container2{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        #login{
+            height: 30px;
+            width: 80px;
+            background-color: orange;
+            border-radius: 5px;
+        }
+        #login:hover{
+            background-color: lightsalmon;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+            <button id="login">Login</button>
+        </nav>
+        <div class="body-area">
+            <h1>Welcome to Express Delivery</h1>
+        </div>
+        <main><div class="container2">        
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Poori</h4>
+            <p>Price: 50</p>
+            <p>Rating: 3 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Idly</h4>
+            <p>Price: 50</p>
+            <p>Rating: 3.5 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Dosa</h4>
+            <p>Price: 60</p>
+            <p>Rating: 5 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Vada</h4>
+            <p>Price: 40</p>
+            <p>Rating: 3.4 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>upma</h4>
+            <p>Price: 30</p>
+            <p>Rating: 2.5 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Veg Meals</h4>
+            <p>Price: 90</p>
+            <p>Rating: 3.9 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Non-Veg</h4>
+            <p>Price: 110</p>
+            <p>Rating: 4 star</p>
+            <button>Add</button>
+        </div>
+        <div class="items">
+            <img src="#" alt="no image found">
+            <h4>Noodles</h4>
+            <p>Price: 80</p>
+            <p>Rating: 3..6 star</p>
+            <button>Add</button>
+        </div>
+    </div></main>
+        <footer>
+            <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">delivery@expressdelivery</a>
+        </footer>
+    </div>
+</body>
+</html>

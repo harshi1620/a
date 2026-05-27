@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Example</title>
+</head>
+<body>
+       
+<input type="text" id="item" placeholder="Enter fruit">
+<button onclick="addFruit()">Add</button>
+<p id="result"></p>
+
+
+<button onclick="addElement()">Add Element</button>
+
+<p id="output"></p>
+
+<script>
+    let fruits = ["Apple", "Banana", "Mango"]
+
+    function addElement() {
+        fruits.push("Orange")
+        document.getElementById("output").innerHTML = fruits.join(", ")
+    }
+
+
+
+
+  
+
+
+
+    // let fruits = [];
+
+    // function addFruit() {
+    //     let fruit = document.getElementById("item").value;
+    //     fruits.push(fruit);
+
+    //     document.getElementById("result").innerHTML =
+    //         "Array: " + fruits.join(", ");
+    // }
+
+
+</script>
+
+</body>
+</html>

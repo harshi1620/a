@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: rgb(216, 107, 107);
+        }
+        #box2{
+box-sizing: border-box;
+background: rgb(161, 110, 110);
+min-width: 90%;
+min-height: 30px;
+border: 2px solid black;
+        }
+        #box1{
+box-sizing: content-box;
+background:orangered ;
+min-width: 50%;
+min-height: 30px;
+border: 2px solid black;
+/* padding: 5px; */
+        }
+        div{
+            display: flex;
+            background: rgb(233, 143, 143);
+            justify-content:flex-start ;
+            align-items:center ;
+        }
+    </style>
+</head>
+<body>
+    <p id="one" style="color:olivedrab;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio illum beatae sapiente repellat quam eaque, possimus a modi saepe asperiores atque consequatur quasi dignissimos error excepturi magnam tempora facere officiis.</p>
+    <p style="background-color: rgb(224, 193, 53); border: 3px  solid black; width: 50%; margin-left: 20px;">Hello user</p>
+    <p style="background-color: rgb(224, 193, 53); width: 50%  ;">Hello user</p>
+
+    <h1 id="box1">
+            content-box
+        </h1>
+
+        <h1 id="box2">
+            border-box
+
+        </h1>
+        <h1>
+            <button> one</button>
+            <button>two</button>
+           
+        </h1>
+
+    
+</body>
+</html>           

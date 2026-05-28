@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicates</title>
+</head>
+<body>
+
+<p id="output"></p>
+
+<script>
+    let arr = [1, 2, 2, 3, 4, 4, 5]
+
+    let uniqueArr = [...new Set(arr)]
+
+    document.getElementById("output").innerHTML =
+        "Unique Array: " + uniqueArr
+</script>
+
+</body>
+</html>

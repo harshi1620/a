@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [1,2,3]
+        let arr2 = [2,3,4]
+        // let length1 = arr1.length+arr2.length
+        // console.log(length1)
+        let result = []
+        for(let i=0; i<arr1.length; i++){
+            result+=arr1[i]
+            if(result[i]!==arr2[i]){ 
+                     
+                result+=arr2[i]
+            }
+        }
+        console.log(result)
+    </script>
+</body>
+</html>

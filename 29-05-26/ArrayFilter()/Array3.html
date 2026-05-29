@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom filter()</title>
+</head>
+<body>
+
+  <script>
+    
+    Array.prototype.myFilter = function(callback, thisArg) {
+      const result = []
+
+      for (let i = 0; i < this.length; i++) {
+
+        if (i in this) {
+
+          if (callback.call(thisArg, this[i], i, this)) {
+            result.push(this[i]);
+          }
+        }
+      }
+
+      return result
+    }
+
+
+    const numbers = [1, 2, 3, 4, 5, 6];
+
+    const evenNumbers = numbers.myFilter(function(num) {
+      return num % 2 === 0
+    })
+
+    console.log("Filtered Array:", evenNumbers);
+
+    document.body.innerHTML += `
+      <p>Original Array: [${numbers}]</p>
+      <p>Filtered Even Numbers: [${evenNumbers}]</p>
+    `;
+  </script>
+
+</body>
+</html>

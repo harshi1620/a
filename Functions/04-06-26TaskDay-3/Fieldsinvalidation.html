@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+Name:
+<input type="text" id="name">
+<span id="nameError"></span>
+
+Email:
+<input type="email" id="email" required>
+<span id="emailError"></span>
+
+Password:
+<input type="password" id="password">
+<span id="passwordError"></span>
+
+Confirm Password:
+<input type="password" id="confirmPassword">
+<span id="confirmError"></span>
+
+<input type="submit" value="Submit">
+
+</form>
+
+
+<script>
+
+function validateForm(){
+
+let name=document.getElementById("name").value
+let password=document.getElementById("password").value
+let confirmPassword=document.getElementById("confirmPassword").value
+
+document.getElementById("nameError").innerHTML=""
+document.getElementById("passwordError").innerHTML=""
+document.getElementById("confirmError").innerHTML=""
+
+if(name==""){
+
+document.getElementById("nameError").innerHTML=
+"Name is required"
+
+return false
+}
+
+else if(password==""){
+
+document.getElementById("passwordError").innerHTML=
+"Password is required"
+
+return false
+}
+
+else if(password.length<6){
+
+document.getElementById("passwordError").innerHTML=
+"Password must contain at least 6 characters"
+
+return false
+}
+
+else if(confirmPassword==""){
+
+document.getElementById("confirmError").innerHTML=
+"Confirm password is required"
+
+return false
+}
+
+else if(password!=confirmPassword){
+
+document.getElementById("confirmError").innerHTML=
+"Passwords do not match"
+
+return false
+}
+
+else{
+
+alert("Form Submitted Successfully")
+
+return true
+}
+
+}
+
+</script>
+
+</body>
+</html>

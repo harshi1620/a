@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let math = 85
+    let science = 90
+    let english = 78
+
+    let total = math + science + english
+    let average = total / 3
+
+    console.log("Total:", total)
+    console.log("Average:", average)
+
+    // Boolean:--
+
+    let username = "Harshitha"
+    let password = "abc123"
+
+    let loginSuccess =
+    username === "Harshitha" &&
+    password === "abc123"
+
+    console.log("Login status:")
+    console.log(loginSuccess)
+
+    // Null:-
+    let selectedProfile = null;
+
+    console.log("Current profile:")
+    console.log(selectedProfile)
+
+    selectedProfile = "Student"
+
+    console.log("Updated profile:")
+    console.log(selectedProfile)
+    const userId = Symbol("id")
+
+// Symbol:--
+    const user = {
+    name: "Harshitha",
+    age: 20,
+    [userId]: 101
+}
+
+    console.log(user.name);
+    console.log(user[userId]);
+    </script>
+    
+</body>
+</html>

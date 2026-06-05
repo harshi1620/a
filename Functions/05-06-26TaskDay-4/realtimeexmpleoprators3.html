@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working days</title>
+</head>
+<body>
+   
+<p id="days"></p>
+
+<script>
+let week = ["Monday","Tuesday","Saturday","Sunday","Friday"]
+let output=""
+
+for(let i=0;i<week.length;i++){
+
+    if(week[i]=="Saturday" || week[i]=="Sunday"){
+        continue
+    }
+
+    output += week[i] + "<br>"
+}
+
+document.getElementById("days").innerHTML = output
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr=[1,2,3,4,2,5,3,6]
+    let result=[]
+    for (let i=0;i < arr.length;i++){
+        let found = false
+    }
+  
+    for (let j=0;j < result.length;j++){
+        if(arr[i]===result[j]) {
+            found=true;
+            break;
+        }
+    }
+    for (let k=i+1;k< arr.length;k++){
+        if (arr[i] === arr[k]){
+            result[result.length]=arr[i]
+            break
+        }
+    }
+console.log("Duplicate element",result(t))
+    </script>
+</body>
+</html>

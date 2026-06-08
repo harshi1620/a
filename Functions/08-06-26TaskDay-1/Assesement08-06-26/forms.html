@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form{
+            width: 200px;
+        }
+        input{
+            width: 100;
+            padding: 5px;
+            margin: 0;
+        }
+        button{
+            padding: 5px; 
+            width: 80;
+
+        }
+        message{
+            margin-top:10px;
+        }
+    </style>
+        
+    
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <from id="regForm">
+        <input type="text" id="fullname"
+    placeholder="fullname">
+<input type ="email"id="email"
+placeholder="email adderss">
+<input type ="tel"id="phone"
+placeholder="phone number">
+<input type ="password"id="password"
+placeholder="password">
+
+<button type="submit">Submit</button>
+<p id="message"></p>
+<script>
+    document.grtelementByid("regForm").addeventListener("submit,function(event)")
+    {
+        event.preventDefault();
+        let fullname=document.getElementById("fullname").value.trim()
+        let email=document.getElementById("email").value.trim()
+        let phone=document.getElementById("phone").value.trim()
+        let password=document.getElementById("password").value.trim()
+        let message=document.getElementById("message")
+
+        if(fullname ==""){
+            message.innerHTML="full name is required"
+            return
+        }
+        if(email ==""){
+            message.innerHTML="email is required"
+            return
+        }if(phone ==""){
+            message.innerHTML="phone number is required"
+            return
+        }
+        if(password ==""){
+            message.innerHTML="password is required"
+            return
+        }
+          message.innerHTML="Registration Successful"
+    
+    }
+</script>
+
+
+</from>
+</body>
+</html>

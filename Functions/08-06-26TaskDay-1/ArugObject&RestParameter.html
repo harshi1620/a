@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Using Arguments Object
+    function showNumbers() {
+        document.write("Arguments Object: <br>")
+
+        for(let i = 0; i < arguments.length; i++) {
+            document.write(arguments[i] + "<br>")
+        }
+    }
+
+    // Using Rest Parameters
+    function displayNumbers(...numbers) {
+        document.write("Rest Parameters: <br>")
+
+        for(let num of numbers) {
+            document.write(num + "<br>")
+        }
+    }
+
+    showNumbers(10, 20, 30)
+
+    document.write("<br>")
+
+    displayNumbers(40, 50, 60)
+</script>
+
+</body>
+</html>

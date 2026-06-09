@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Recursive Programs</h2>
+
+<script>
+
+    // Factorial using recursion
+    function factorial(n) {
+        if (n == 0 || n == 1)
+            return 1
+
+        return n * factorial(n - 1)
+    }
+
+    let num = 5
+    console.log("Factorial of " + num + " = " + factorial(num))
+
+
+    // Fibonacci using recursion
+    function fibonacci(n) {
+        if (n <= 1)
+            return n
+
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    }
+
+    let terms = 6
+
+    console.log("Fibonacci Series:")
+
+    for(let i = 0; i < terms; i++) {
+        console.log(fibonacci(i))
+    }
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

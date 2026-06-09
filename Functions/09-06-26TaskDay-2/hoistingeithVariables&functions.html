@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Hoisting Examples</h2>
+
+<script>
+
+    //  Function Hoisting:-
+    sayHello()
+
+    function sayHello() {
+        console.log("Example 1: Function Hoisted");
+    }
+
+
+    // var Hoisting:-
+    console.log("Example 2:", a)
+
+    var a = 100
+
+    console.log("After value:", a)
+
+
+    // var inside function:-
+    function test() {
+        console.log("Example 3:", b)
+
+        var b = 50
+
+        console.log("After value:", b)    }
+
+    test()
+
+      //Multiple var variable:-
+    console.log("Example 7:", x, y)
+
+    var x = 10
+    var y = 20
+
+    console.log("After values:", x, y)
+
+
+    //  Variable and function with same name:-
+    var student = "John"
+
+    function student() {
+        console.log("Student function")
+    }
+
+    console.log("Example 8:", student)
+
+
+    // Nested function hoisting:-
+    outer()
+
+    function outer() {
+        console.log("Outer Function")
+
+        function inner() {
+            console.log("Inner Function")
+        }
+
+        inner()
+    }
+ 
+
+</script>
+
+</body>
+</html>

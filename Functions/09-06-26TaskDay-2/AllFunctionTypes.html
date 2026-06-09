@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h2>JavaScript Function Types</h2>
+
+<script>
+
+    // 1. Regular Function
+    function greet() {
+        console.log("Regular Function")
+    }
+    greet()
+
+
+    // 2. Function Expression
+    let add = function() {
+        console.log("Function Expression")
+    }
+    add()
+
+
+    // 3. Arrow Function
+    let hello = () => {
+        console.log("Arrow Function")
+    }
+    hello()
+
+
+    // 4. Anonymous Function
+    setTimeout(function() {
+        console.log("Anonymous Function")
+    }, 1000)
+
+
+    // 5. Callback Function
+    function display(msg) {
+        console.log(msg)
+    }
+
+    function test(callback) {
+        callback("Callback Function")
+    }
+
+    test(display)
+
+
+    // 6. Recursive Function
+    function count(n) {
+        if(n <= 0) return
+        console.log(n)
+        count(n-1)
+    }
+      count(3)
+
+    // 7. IIFE
+    (function() {
+        console.log("IIFE Function")
+    })()
+
+
+    // 8. Nested Function
+    function outer() {
+        function inner() {
+            console.log("Nested Function")
+        }
+        inner()
+    }
+
+    outer()
+
+</script>
+
+</body>
+</html>

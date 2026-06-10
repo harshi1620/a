@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Scope Examples</h2>
+    <button onclick="showScopes()">Run Examples</button>
+
+    <script>
+        
+        // 1. Global Scope
+        
+        let globalVariable = "I am a Global Variable"
+
+        function showScopes() {
+            console.log("Global Scope Example:")
+            console.log(globalVariable) // Accessible anywhere
+
+            
+            // 2. Function Scope
+           
+            function functionScopeExample() {
+                var functionVariable = "I am a Function Scoped Variable"
+                console.log(functionVariable) // Accessible inside function
+            }
+
+            functionScopeExample()
+
+            
+
+           
+            // 3. Block Scope
+           
+            {
+                let blockVariable = "I am a Block Scoped Variable"
+                const blockConstant = "I am also Block Scoped"
+
+                console.log(blockVariable)
+                console.log(blockConstant)
+            }
+
+        }
+    </script>
+</body>
+</html>

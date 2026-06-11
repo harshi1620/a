@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Functions as Arguments and Returned from Functions</h2>
+
+    <button onclick="demoCallback()">Callback Example</button>
+    <button onclick="demoReturnedFunction()">Returned Function Example</button>
+
+    <p id="output"></p>
+
+    <script>
+        // Function passed as an argument
+        function calculate(a, b, operation) {
+            return operation(a, b)
+        }
+
+        function add(x, y) {
+            return x + y
+        }
+
+        function demoCallback() {
+            let result = calculate(10, 20, add);
+            document.getElementById("output").innerHTML =
+                "Callback Result: " + result
+        }
+
+        // Function returned from another function
+        function multiplier(factor) {
+            return function(number) {
+                return factor * number
+            }
+        }
+
+        function demoReturnedFunction() {
+            let double = multiplier(2)
+            let result = double(15)
+
+            document.getElementById("output").innerHTML =
+                "Returned Function Result: " + result
+        }
+    </script>
+
+</body>
+</html>

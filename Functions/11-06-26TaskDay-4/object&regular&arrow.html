@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-line
+        }
+    </style>
+</head>
+<body>
+     Regular Functions, and Arrow Functions</h2>
+
+    <button onclick="runExamples()">Run Examples</button>
+
+    <div id="output"></div>
+
+    <script>
+        function runExamples() {
+            let result = ""
+
+            // 1. Object Example
+            const student = {
+                name: "Sam",
+                age: 21,
+                course: "B.Tech"
+            }
+
+            result += " Object Example\n"
+            result += "Name: " + student.name + "\n"
+            result += "Age: " + student.age + "\n"
+            result += "Course: " + student.course + "\n\n"
+
+            // 2. Regular Function Example
+            function add(a, b) {
+                return a + b
+            }
+
+            result += "Regular Function Example \n"
+            result += "10 + 20 = " + add(10, 20) + "\n\n"
+
+            // 3. Arrow Function Example
+            const multiply = (a, b) => a * b
+
+            result += " Arrow Function Example \n"
+            result += "10 * 5 = " + multiply(10, 5) + "\n\n"
+
+            // 4. Object Method with Regular Function
+            const person = {
+                name: "Harshi",
+                greet: function() {
+                    return "Hello, I am " + this.name
+                }
+            }
+
+            result += "Object Method (Regular Function) \n"
+            result += person.greet() + "\n"
+
+            // 5. Arrow Function Inside Object
+            const employee = {
+                name: "sam",
+                greet: () => {
+                    return "Hello, I am " + this.name
+                }
+            }
+
+            result += "Arrow Function Inside Object \n"
+            result += employee.greet() + "\n"
+            result += "(Arrow functions do not have their own 'this')\n"
+
+            document.getElementById("output").textContent = result
+        }
+    </script>
+
+</body>
+</html>

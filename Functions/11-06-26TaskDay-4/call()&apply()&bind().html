@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>call(), apply(), and bind() Demo</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-line;
+        }
+    </style> -->
+</head>
+<body>
+
+<h2>Demonstration of call(), apply(), and bind()</h2>
+
+<button onclick="runDemo()">Run Demo</button>
+
+<div id="output"></div>
+
+<script>
+function runDemo() {
+    let result = ""
+
+    const person1 = {
+        name: "Harshi"
+    }
+
+    const person2 = {
+        name: "Priya"
+    }
+
+    function greet(city, country) {
+        return "Hello, I am " + this.name +
+               " from " + city + ", " + country
+    }
+
+    // call()
+    result += " call() Example \n"
+    result += greet.call(person1, "Hyderabad", "India")
+    result += "\n\n"
+
+    // apply()
+    result += "apply() Example \n"
+    result += greet.apply(person2, ["Chennai", "India"])
+    result += "\n\n"
+
+    // bind()
+    result += " bind() Example \n"
+    const boundFunction = greet.bind(person1, "Mumbai", "India")
+    result += boundFunction()
+
+    document.getElementById("output").textContent = result
+}
+</script>
+
+</body>
+</html>

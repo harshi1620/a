@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Behavior of "this" Keyword</h2>
+    <button onclick="showExamples()">Run Examples</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function showExamples() {
+            let result = ""
+
+            // 1. this in a regular function
+            function regularFunction() {
+                return this
+            }
+
+            result += "1. Regular Function:\n"
+            result += regularFunction() + "\n\n"
+
+            // 2. this inside an object method
+            const person = {
+                name: "harshi",
+                greet: function() {
+                    return this.name
+                }
+            }
+
+            result += "2. Object Method:\n"
+            result += person.greet() + "\n\n"
+
+            // 3. this in an event handler
+            result += "3. Event Handler:\n"
+            result += "Clicking the button sets 'this' to the button element.\n\n"
+
+            // 4. this in arrow functions
+            const obj = {
+                name: "Alice",
+                arrowFunc: () => {
+                    return this
+                }
+            }
+
+            result += "4. Arrow Function:\n"
+            result += obj.arrowFunc() + "\n\n"
+
+            // 5. Explicit binding using call()
+            function introduce(city) {
+                return this.name + " from " + city
+            }
+
+            const user = { name: "Teju" }
+
+            result += "5. call() Method:\n"
+            result += introduce.call(user, "Hyderabad") + "\n\n"
+
+            document.getElementById("output").textContent = result
+        }
+    </script>
+
+</body>
+</html>

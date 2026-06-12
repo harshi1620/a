@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Loop Through Array</h2>
+
+<script>
+    let fruits = ["Apple", "Banana", "Mango"]
+
+    document.write("<b>Using for loop:</b><br>")
+    for (let i = 0; i < fruits.length; i++) {
+        document.write(fruits[i] + "<br>")
+    }
+
+    document.write("<br><b>Using for...of:</b><br>")
+    for (let fruit of fruits) {
+        document.write(fruit + "<br>")
+    }
+
+    document.write("<br><b>Using forEach():</b><br>")
+    fruits.forEach(function(fruit) {
+        document.write(fruit + "<br>")
+    })
+
+
+    
+</script>
+
+</body>
+</html>

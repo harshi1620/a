@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multidimensional Array</title>
+</head>
+<body>
+
+<h2>Student Marks</h2>
+<p id="output"></p>
+
+<script>
+    // Creating and initializing a 2D array
+    let marks = [
+        [85, 90, 78],
+        [88, 76, 92],
+        [95, 89, 84]
+    ];
+
+    let result = ""
+
+    // Accessing array elements
+    for (let i = 0; i < marks.length; i++) {
+        for (let j = 0; j < marks[i].length; j++) {
+            result += marks[i][j] + " "
+        }
+        result += "<br>"
+    }
+
+    document.getElementById("output").innerHTML = result
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Emptying Arrays</h2>
+
+<script>
+    let arr = [10, 20, 30, 40]
+
+    document.write("Original Array: " + arr + "<br><br>")
+
+    // Method 1: length = 0
+    arr.length = 0
+    document.write("After length = 0: " + arr + "<br>")
+
+    // Create array again
+    arr = [10, 20, 30, 40]
+
+    // Method 2: splice()
+    arr.splice(0, arr.length)
+    document.write("After splice(): " + arr + "<br>")
+
+    // Create array again
+    arr = [10, 20, 30, 40]
+
+    // Method 3: assign empty array
+    arr = []
+    document.write("After arr = []: " + arr)
+</script>
+
+</body>
+</html>

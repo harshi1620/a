@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="sortMarks()">Sort Marks</button>
+
+<p id="marksResult"></p>
+
+<script>
+function sortMarks() {
+    let marks = [78, 45, 92, 67, 88, 55]
+
+    for (let i = 0; i < marks.length - 1; i++) {
+        for (let j = 0; j < marks.length - 1 - i; j++) {
+            if (marks[j] > marks[j + 1]) {
+                let temp = marks[j]
+                marks[j] = marks[j + 1]
+                marks[j + 1] = temp
+            }
+        }
+    }
+
+    document.getElementById("marksResult").innerHTML =
+        "Sorted Marks: " + marks.join(", ")
+}
+</script>
+
+</body>
+</html>

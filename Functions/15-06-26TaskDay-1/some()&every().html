@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>some() and every() Example</title>
+</head>
+<body>
+
+    <button onclick="checkResults()">Check Results</button>
+
+    <p id="someResult"></p>
+    <p id="everyResult"></p>
+
+    <script>
+        function checkResults() {
+          
+        const marks = [45, 60, 78, 32, 90]
+
+            
+        const hasTopper = marks.some(mark => mark > 80)
+
+            
+        const allPassed = marks.every(mark => mark >= 35)
+
+        document.getElementById("someResult").innerHTML =
+            "Any student scored above 80? " + hasTopper
+
+        document.getElementById("everyResult").innerHTML =
+            "Did all students pass? " + allPassed
+        }
+    </script>
+
+</body>
+</html>

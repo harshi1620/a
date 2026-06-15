@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object </title>
+</head>
+<body>
+    <button onclick="practiceObject()">click button</button>
+
+    <div id="output"></div>
+
+    <script>
+        function practiceObject() {
+
+            // Create an object
+            const student = {
+                name: "Harshi",
+                age: 20,
+                course: "JavaScript"
+            }
+
+            let result = "<h3>Original Object</h3>"
+            result += `Name: ${student.name}<br>`
+            result += `Age: ${student.age}<br>`
+            result += `Course: ${student.course}<br><br>`
+
+            // Access properties
+            result += "<h3>Accessing Properties</h3>"
+            result += `Using dot notation: ${student.name}<br>`
+            result += `Using bracket notation: ${student["course"]}<br><br>`
+
+            // Modify existing properties
+            student.age = 21
+            student["course"] = "React JS"
+
+            // Add new property
+            student.city = "Mumbai"
+
+            // Delete property
+            delete student.course
+
+            result += "<h3>Modified Object</h3>"
+            result += `Name: ${student.name}<br>`
+            result += `Age: ${student.age}<br>`
+            result += `City: ${student.city}<br>`
+
+            document.getElementById("output").innerHTML = result
+        }
+    </script>
+
+</body>
+</html>

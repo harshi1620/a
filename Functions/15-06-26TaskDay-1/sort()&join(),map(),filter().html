@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array </title>
+    
+</head>
+<body>
+     <button onclick="runExamples()">Run Examples</button>
+
+    <div id="output"></div>
+
+    <script>
+        function runExamples() {
+            const output = document.getElementById("output");
+
+            // Original array
+            const numbers = [5, 2, 8, 1, 9];
+
+            // 1. join()
+            const fruits = ["Apple", "Banana", "Mango"]
+            const joinedFruits = fruits.join(", ")
+
+            // 2. sort()
+            const sortedNumbers = [...numbers].sort((a, b) => a - b)
+
+            // 3. map()
+            const doubledNumbers = numbers.map(num => num * 2)
+
+            // 4. filter()
+            const evenNumbers = numbers.filter(num => num % 2 === 0)
+
+            // 5. reduce()
+            const total = numbers.reduce((sum, num) => sum + num, 0)
+
+            output.innerHTML = `
+                <h3>1. join()</h3>
+                Original: ${fruits}<br>
+                Joined: ${joinedFruits}
+
+                <h3>2. sort()</h3>
+                Original: ${numbers}<br>
+                Sorted: ${sortedNumbers}
+
+                <h3>3. map()</h3>
+                Original: ${numbers}<br>
+                Doubled Values: ${doubledNumbers}
+
+                <h3>4. filter()</h3>
+                Original: ${numbers}<br>
+                Even Numbers: ${evenNumbers}
+
+                <h3>5. reduce()</h3>
+                Original: ${numbers}<br>
+                Sum of Numbers: ${total}
+            `;
+        }
+    </script>
+
+</body>
+</html>

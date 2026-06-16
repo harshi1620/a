@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Copy Types </title>
+</head>
+<body>
+
+<pre id="output"></pre>
+
+<script>
+let result = ""
+
+// Original Object
+const original = {
+    name: "Ravi",
+    address: {
+        city: "Chennai"
+    }
+}
+
+// 1. Normal Copy
+
+const normalCopy = original
+
+normalCopy.name = "Kumar"
+
+result += "NORMAL COPY\n"
+result += "Original Name: " + original.name + "\n"
+result += "Copied Name: " + normalCopy.name + "\n\n"
+
+// Reset
+original.name = "Ravi"
+
+
+// 2. Shallow Copy
+
+const shallowCopy = { ...original }
+
+shallowCopy.address.city = "Madurai"
+
+result += "SHALLOW COPY\n"
+result += "Original City: " + original.address.city + "\n"
+result += "Copied City: " + shallowCopy.address.city + "\n\n"
+
+// Reset
+original.address.city = "Chennai"
+
+
+// 3. Deep Copy
+
+const deepCopy = structuredClone(original)
+
+deepCopy.address.city = "Coimbatore"
+
+result += "DEEP COPY\n"
+result += "Original City: " + original.address.city + "\n"
+result += "Copied City: " + deepCopy.address.city + "\n"
+
+document.getElementById("output").textContent = result
+</script>
+
+</body>
+</html>

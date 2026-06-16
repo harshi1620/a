@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shallow Copy Example</title>
+</head>
+<body>
+<pre id="output"></pre>
+
+<script>
+let result = ""
+
+// Original Object
+const student = {
+    name: "harshi",
+    age: 20,
+    address: {
+        city: "vijyawada"
+    }
+}
+
+// Shallow Copy using Spread Operator
+const spreadCopy = { ...student }
+
+// Shallow Copy using Object.assign()
+const assignCopy = Object.assign({}, student)
+
+// Modify nested object
+spreadCopy.address.city = "Madurai"
+
+result += "Using Spread Operator (...)\n"
+result += "Original City: " + student.address.city + "\n"
+result += "Copied City: " + spreadCopy.address.city + "\n\n"
+
+// Reset city
+student.address.city = "Chennai"
+
+// Modify nested object again
+assignCopy.address.city = "Coimbatore"
+
+result += "Using Object.assign()\n"
+result += "Original City: " + student.address.city + "\n"
+result += "Copied City: " + assignCopy.address.city + "\n"
+
+document.getElementById("output").textContent = result
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const student1 = {
+    name: "Ravi",
+    age: 20
+}
+
+const student2 = student1 // Reference copy
+
+student2.name = "Kumar"
+
+console.log(student1) // {name: "Kumar", age: 20}
+console.log(student2) // {name: "Kumar", age: 20}
+
+const employee1 = {
+    name: "John",
+    salary: 50000
+}
+
+const employee2 = Object.assign({}, employee1)
+
+employee2.name = "David"
+
+console.log(employee1); // John
+console.log(employee2); // David
+
+const product1 = {
+    id: 101,
+    name: "Laptop"
+}
+
+const product2 = { ...product1 }
+
+product2.name = "Desktop"
+
+console.log(product1)
+console.log(product2)
+</script>
+</body>
+</html>

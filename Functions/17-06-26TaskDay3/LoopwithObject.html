@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Object Properties</h2>
+<p id="output"></p>
+
+<script>
+const person = {
+  name: "Harshi",
+  age: 25,
+  city: "hyd"
+};
+
+let text = ""
+
+for (let key in person) {
+  text += key + ": " + person[key] + "<br>"
+}
+
+document.getElementById("output").innerHTML = text
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template Literals Example</title>
+</head>
+<body>
+
+<h2>User Profile</h2>
+<p id="output"></p>
+
+<script>
+    const name = "Samu"
+    const age = 22
+    const city = "Hyd"
+
+    const message = `
+        Name: ${name}<br>
+        Age: ${age}<br>
+        City: ${city}
+    `
+
+    document.getElementById("output").innerHTML = message
+</script>
+
+</body>
+</html>

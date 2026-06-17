@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="output"></div>
+
+<script>
+const student = {
+    name: "Teja",
+    age: 20,
+    course: "JavaScript"
+}
+
+let result = ""
+
+for(let key in student){
+    result += `${key}: ${student[key]}<br>`
+}
+
+document.getElementById("output").innerHTML = result
+</script>
+
+</body>
+</html>

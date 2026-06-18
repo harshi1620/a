@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent">
+    <p id="first">First Paragraph</p>
+    <p id="second">Second Paragraph</p>
+    <p id="third">Third Paragraph</p>
+</div>
+
+<script>
+    let secondPara = document.getElementById("second")
+
+    // Parent Element
+    console.log(secondPara.parentElement)
+
+    // Child Elements of Parent
+    console.log(secondPara.parentElement.children)
+
+    // Previous Sibling
+    console.log(secondPara.previousElementSibling)
+
+    // Next Sibling
+    console.log(secondPara.nextElementSibling)
+</script>
+
+</body>
+</html>

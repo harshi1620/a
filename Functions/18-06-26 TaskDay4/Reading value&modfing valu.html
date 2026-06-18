@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading">Original Text</h2>
+<input type="text" id="username" value="teju">
+<button id="changeBtn">Update</button>
+
+<script>
+const heading = document.getElementById("heading")
+const input = document.getElementById("username")
+
+document.getElementById("changeBtn").addEventListener("click", function() {
+
+    // Read values
+    console.log(heading.textContent)
+    console.log(input.value)
+
+    // Modify values
+    heading.textContent = "Updated Text"
+    heading.style.color = "green"
+
+    input.value = "Harshi"
+})
+</script>
+
+</body>
+</html>

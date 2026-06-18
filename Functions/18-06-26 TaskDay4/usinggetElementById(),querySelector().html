@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Hello World</h1>
+
+<p class="text">First Paragraph</p>
+<p class="text">Second Paragraph</p>
+
+<p class="text">First Paragraph</p>
+<p class="text">Second Paragraph</p>
+<p class="text">Third Paragraph</p>
+
+
+<script>
+    let heading = document.getElementById("title")
+    console.log(heading)
+    let firstPara = document.querySelector(".text")
+    console.log(firstPara)
+    let paragraphs = document.querySelectorAll(".text");
+
+    paragraphs.forEach(function(p) {
+        console.log(p.textContent)
+    })
+
+</script>
+
+</body>
+</html>

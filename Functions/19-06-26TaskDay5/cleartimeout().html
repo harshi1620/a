@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clearTimeout </title>
+</head>
+<body>
+<button onclick="startTimer()">Start Timer</button>
+<button onclick="stopTimer()">Cancel Timer</button>
+
+<p id="msg"></p>
+
+<p id="counter">0</p>
+
+<button onclick="startCounter()">Start</button>
+<button onclick="stopCounter()">Stop</button>
+
+
+<script>
+let timeoutId
+
+function startTimer() {
+    document.getElementById("msg").innerHTML =
+        "Message will appear after 5 seconds..."
+
+    timeoutId = setTimeout(function() {
+        document.getElementById("msg").innerHTML =
+            "Hello! Timer completed."
+    }, 5000)
+}
+
+function stopTimer() {
+    clearTimeout(timeoutId);
+    document.getElementById("msg").innerHTML =
+        "Timer cancelled!"
+}
+let count = 0
+let intervalId
+
+function startCounter() {
+    intervalId = setInterval(function() {
+        count++
+        document.getElementById("counter").innerHTML = count
+    }, 1000)
+}
+
+function stopCounter() {
+    clearInterval(intervalId)
+}
+</script>
+
+</body>
+</html>

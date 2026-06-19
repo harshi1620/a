@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>setTimeout</title>
+</head>
+<body>
+<button onclick="showMessage()">Click Me</button>
+
+<p id="demo"></p>
+<p id="clock"></p>
+
+<script>
+function showMessage() {
+    setTimeout(function() {
+        document.getElementById("demo").innerHTML =
+            "Hello! This message appeared after 3 seconds."
+    }, 3000) // 3000 ms = 3 seconds
+}
+setInterval(function() {
+    let now = new Date()
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString()
+}, 1000) 
+</script>
+
+</body>
+</html>

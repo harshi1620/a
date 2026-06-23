@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async/Await Example</title>
+</head>
+<body>
+<script>
+    // Function returning a Promise
+    function getData() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve("Data received")
+            }, 2000)
+        })
+    }
+
+    // Promise-based code
+    getData()
+        .then(result => {
+            console.log("Using Promise:", result)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
+    // Async/Await version
+    async function fetchData() {
+        try {
+            const result = await getData()
+            console.log("Using Async/Await:", result)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    fetchData()
+</script>
+
+</body>
+</html>

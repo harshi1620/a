@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iterators and Generators Example</title>
+</head>
+<body>
+    <button onclick="showIterator()">Run Iterator Example</button>
+    <button onclick="showGenerator()">Run Generator Example</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        // Iterator Example
+        function showIterator() {
+            const output = document.getElementById("output")
+
+            const numbers = [10, 20, 30]
+            const iterator = numbers[Symbol.iterator]()
+
+            let result = ""
+            result += JSON.stringify(iterator.next()) + "\n"
+            result += JSON.stringify(iterator.next()) + "\n"
+            result += JSON.stringify(iterator.next()) + "\n"
+            result += JSON.stringify(iterator.next()) + "\n"
+
+            output.textContent = "Iterator Example:\n" + result
+        }
+
+        // Generator Example
+        function* generateNumbers() {
+            yield 1
+            yield 2
+            yield 3
+        }
+
+        function showGenerator() {
+            const output = document.getElementById("output")
+
+            const gen = generateNumbers()
+
+            let result = ""
+            result += JSON.stringify(gen.next()) + "\n"
+            result += JSON.stringify(gen.next()) + "\n"
+            result += JSON.stringify(gen.next()) + "\n"
+            result += JSON.stringify(gen.next()) + "\n"
+
+            output.textContent = "Generator Example:\n" + result
+        }
+    </script>
+</body>
+</html>

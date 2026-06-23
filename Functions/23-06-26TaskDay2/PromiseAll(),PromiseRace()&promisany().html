@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Promise.all()
+Promise.all([
+  Promise.resolve("A"),
+  Promise.resolve("B")
+]).then(result => {
+  console.log("Promise.all:", result)
+})
+
+// Promise.race()
+Promise.race([
+  new Promise(resolve => setTimeout(() => resolve("First"), 1000)),
+  new Promise(resolve => setTimeout(() => resolve("Second"), 2000))
+]).then(result => {
+  console.log("Promise.race:", result)
+})
+
+// Promise.allSettled()
+Promise.allSettled([
+  Promise.resolve("Success"),
+  Promise.reject("Failed")
+]).then(result => {
+  console.log("Promise.allSettled:", result)
+})
+
+// Promise.any()
+Promise.any([
+  Promise.reject("Error 1"),
+  Promise.resolve("Success"),
+  Promise.resolve("Another Success")
+]).then(result => {
+  console.log("Promise.any:", result)
+})
+</script>
+</body>
+</html>

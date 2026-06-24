@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Local Storage Demo</h2>
+
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="saveData()">Save</button>
+    <button onclick="getData()">Retrieve</button>
+    <button onclick="removeData()">Remove</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Store data in Local Storage
+        function saveData() {
+            let name = document.getElementById("username").value
+            localStorage.setItem("username", name)
+            console.log("Data saved successfully!")
+        }
+
+        // Retrieve data from Local Storage
+        function getData() {
+            let storedName = localStorage.getItem("username")
+
+            if (storedName) {
+                document.getElementById("result").innerHTML =
+                    "Stored Name: " + storedName;
+            } else {
+                document.getElementById("result").innerHTML =
+                    "No data found!"
+            }
+        }
+
+        // Remove data from Local Storage
+        function removeData() {
+            localStorage.removeItem("username")
+            document.getElementById("result").innerHTML =
+                "Data removed!"
+        }
+    </script>
+
+</body>
+</html>

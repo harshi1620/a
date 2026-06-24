@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Session Storage Example</h2>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="saveData()">Save</button>
+    <button onclick="getData()">Retrieve</button>
+    <button onclick="removeData()">Remove</button>
+    <button onclick="clearData()">Clear All</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Store data
+        function saveData() {
+            let name = document.getElementById("username").value
+            sessionStorage.setItem("username", name)
+            alert("Data saved in Session Storage!")
+        }
+
+        // Retrieve data
+        function getData() {
+            let name = sessionStorage.getItem("username")
+
+            if (name) {
+                document.getElementById("result").innerHTML =
+                    "Stored Name: " + name
+            } else {
+                document.getElementById("result").innerHTML =
+                    "No data found!"
+            }
+        }
+
+        // Remove specific data
+        function removeData() {
+            sessionStorage.removeItem("username")
+            document.getElementById("result").innerHTML =
+                "Data removed!"
+        }
+
+        // Clear all session storage
+        function clearData() {
+            sessionStorage.clear()
+            document.getElementById("result").innerHTML =
+                "All session data cleared!"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Storage Persistence </title>
+    
+</head>
+<body>
+    <input type="text" id="userData" placeholder="Enter some text">
+
+    <button onclick="saveLocal()">Save to Local Storage</button>
+    <button onclick="saveSession()">Save to Session Storage</button>
+
+    <div class="box">
+        <!-- <h3>Stored Values</h3> -->
+        <!-- <p id="localResult">Local Storage: </p> -->
+        <!-- <p id="sessionResult">Session Storage: </p> -->
+    </div>
+
+    <button onclick="loadData()">Load Data</button>
+    <button onclick="clearData()">Clear All</button>
+
+    <script>
+        // Save to Local Storage
+        function saveLocal() {
+            let data = document.getElementById("userData").value
+            localStorage.setItem("localData", data)
+            console.log("Saved to Local Storage")
+        }
+
+        // Save to Session Storage
+        function saveSession() {
+            let data = document.getElementById("userData").value
+            sessionStorage.setItem("sessionData", data)
+            console.log("Saved to Session Storage")
+        }
+
+        // Load data from both storages
+        function loadData() {
+            let localValue =
+                localStorage.getItem("localData") || "No Data"
+
+            let sessionValue =
+                sessionStorage.getItem("sessionData") || "No Data"
+
+            document.getElementById("localResult").innerHTML =
+                "Local Storage: " + localValue
+
+            document.getElementById("sessionResult").innerHTML =
+                "Session Storage: " + sessionValue
+        }
+
+        // Clear both storages
+        function clearData() {
+            localStorage.clear()
+            sessionStorage.clear()
+
+            document.getElementById("localResult").innerHTML =
+                "Local Storage: Cleared"
+
+            document.getElementById("sessionResult").innerHTML =
+                "Session Storage: Cleared"
+        }
+
+        // Automatically load saved data when page loads
+        window.onload = loadData
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOM Components Demo</title>
+</head>
+<body>
+    <button onclick="showWindowInfo()">Window Info</button>
+    <button onclick="showNavigatorInfo()">Navigator Info</button>
+    <button onclick="showLocationInfo()">Location Info</button>
+    <button onclick="goBack()">History Back</button>
+
+    <div id="output" style="margin-top:20px;"></div>
+
+    <script>
+        // Window Object
+        function showWindowInfo() {
+            document.getElementById("output").innerHTML =
+                "<h3>Window Information</h3>" +
+                "Window Width: " + window.innerWidth + " px<br>" +
+                "Window Height: " + window.innerHeight + " px"
+        }
+
+        // Navigator Object
+        function showNavigatorInfo() {
+            document.getElementById("output").innerHTML =
+                "<h3>Navigator Information</h3>" +
+                "Browser: " + navigator.appName + "<br>" +
+                "Platform: " + navigator.platform + "<br>" +
+                "Language: " + navigator.language
+        }
+
+        // Location Object
+        function showLocationInfo() {
+            document.getElementById("output").innerHTML =
+                "<h3>Location Information</h3>" +
+                "URL: " + location.href + "<br>" +
+                "Hostname: " + location.hostname + "<br>" +
+                "Pathname: " + location.pathname
+        }
+
+        // History Object
+        function goBack() {
+            history.back()
+        }
+    </script>
+
+</body>
+</html>

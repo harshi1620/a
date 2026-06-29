@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Units Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Pixels (px) */
+.pixel {
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Percentage (%) */
+.percent {
+    width: 70%;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Viewport Units (vw, vh) */
+.viewport {
+    width: 50vw;
+    height: 30vh;
+    background-color: lightcoral;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Auto Sizing */
+.auto {
+    width: auto;
+    height: auto;
+    background-color: lightyellow;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+
+    <h2>CSS Width and Height Units</h2>
+
+    <div class="pixel">Width: 300px | Height: 100px</div>
+
+    <div class="percent">Width: 70% | Height: 100px</div>
+
+    <div class="viewport">Width: 50vw | Height: 30vh</div>
+
+    <div class="auto">
+        Width: auto | Height: auto <br>
+        This box automatically adjusts its size based on the content inside it.
+    </div>
+
+</body>
+</html>

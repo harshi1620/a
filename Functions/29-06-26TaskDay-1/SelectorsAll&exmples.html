@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+    /* Element Selector */
+p {
+    color:black;
+    font-size: 18px;
+}
+/* Class Selector */
+.highlight {
+    color:black;
+    background-color: yellow;
+    /* font-weight: bold; */
+}
+/* ID Selector */
+#heading {
+    color:black;
+    font-size: 30px;
+}
+/* Group Selector */
+h1, h2, p {
+    color: black;
+    text-align: center;
+}
+/* Descendant Selector */
+div p {
+    color: black;
+}
+/* Child Selector */
+div > p {
+    color: black;
+}
+/* Adjacent Sibling Selector */
+h2 + p {
+    color: black;
+    /* font-weight: bold; */
+}
+/* General Sibling Selector */
+h2 ~ p {
+    color: black;
+}
+    </style>
+
+</head>
+<body>
+ <!-- Universal Selector:- -->
+    <h2>Welcome</h2>
+
+    <p>This is a paragraph.</p>
+
+    <div>This is a div element.</div>
+
+<!-- Element Selectors:- -->
+    <h2>Welcome to CSS</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+ <!-- Class Selector:- -->
+    <p>This paragraph has no class.</p>
+
+    <!-- ID Selector:- -->
+    <!-- <h1 id="heading">Welcome to CSS</h1> -->
+    <p>This is a paragraph.</p>
+
+<!-- Group Selector:- -->
+    <h2>Heading</h2>
+    <p>Paragraph</p>
+    <h2>Sub Heading</h2>
+
+<!-- Descendant Selector:- -->
+    <div>
+        <p>This paragraph is inside the div.</p>
+    </div>
+
+    <p>This paragraph is outside the div.</p>
+
+<!-- Child Selector:- -->
+    <div>
+        <p>Direct child paragraph.</p>
+
+        <section>
+            <p>Nested paragraph.</p>
+        </section>
+    </div>
+
+<!-- Adjacent Sibling Selector:- -->
+    <h2>Heading</h2>
+    <p>First paragraph was nice.</p>
+    <p>Second paragraph.</p>
+
+<!-- General Sibling Selector:- -->
+    <h2>Heading</h2>
+
+    <p>First page.</p>
+    <div>Some content</div>
+    <p>Second page.</p>
+    <p>Third paragraph.</p>
+
+   
+</body>
+</html>

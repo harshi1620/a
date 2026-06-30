@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border vs Outline</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 250px;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(172, 206, 218);
+            text-align: center;
+           
+        }
+
+        /* Border Example */
+        .border-box {
+            border: 5px solid black;
+        }
+
+        /* Outline Example */
+        .outline-box {
+            outline: 5px dashed black;
+            outline-offset: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border vs Outline</h1>
+
+    <div class="container">
+
+        <div class="box border-box">
+            Border 
+        </div>
+
+        <div class="box outline-box">
+            Outline 
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

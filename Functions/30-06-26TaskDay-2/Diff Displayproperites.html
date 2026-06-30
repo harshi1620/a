@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .box {
+            background-color: beige;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* Block */
+        .block {
+            display: block;
+        }
+
+        /* Inline */
+        .inline {
+            display: inline;
+            background-color: beige;
+        }
+
+        /* Inline-Block */
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            background-color: beige;
+        }
+
+        /* None */
+        .none {
+            display: none;
+        }
+
+        /* Flex */
+        .flex-container {
+            display: flex;
+            gap: 15px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: beige;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display Properties</h1>
+
+    <h2> Block</h2>
+    <div class="box block">Block Element 1</div>
+    <div class="box block">Block Element 2</div>
+
+    <h2> Inline</h2>
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+    <span class="box inline">Inline 3</span>
+
+    <h2> Inline-Block</h2>
+    <div class="box inline-block">Inline-Block 1</div>
+    <div class="box inline-block">Inline-Block 2</div>
+
+    <h2> None</h2>
+    <div class="box"> box is visible.</div>
+    <div class="box"> box is also visible.</div>
+
+    <h2> Flex</h2>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+</html>

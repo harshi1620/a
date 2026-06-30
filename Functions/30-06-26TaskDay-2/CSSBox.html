@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            width: 250px;              /* Content Width */
+            height: 100px;             /* Content Height */
+            background-color: lightblue;
+
+            padding: 20px;             /* Space inside the border */
+            border: 5px solid rgb(125, 125, 212);    /* Border around the padding */
+            margin: 30px auto;         /* Space outside the border */
+
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .description {
+            width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border: 2px solid gray;
+        }
+
+        ul {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="description">
+        <h2>Box Model Parts</h2>
+        <ul>
+            <div><strong>Content:</strong> The text "CSS Box Model" inside the box.</div>
+            <div><strong>Padding:</strong> 20px space between the content and the border.</div>
+            <div><strong>Border:</strong> 5px solid navy border around the padding.</div>
+            <div><strong>Margin:</strong> 30px space outside the border separating it from other elements.</div>
+        </ul>
+    </div>
+
+    <div class="box">
+        CSS Box Model
+    </div>
+
+</body>
+</html>

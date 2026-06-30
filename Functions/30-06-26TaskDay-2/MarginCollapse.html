@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-bottom: 40px;
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Example 1: Margin Collapse */
+        .box1 {
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            margin-top: 30px;
+        }
+
+        /* Example 2: No Margin Collapse (Parent has Padding) */
+        .parent {
+            background-color: lightyellow;
+            padding: 20px;
+            border: 2px solid gray;
+        }
+
+        .child {
+            background-color: skyblue;
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Margin Collapse </h1>
+
+    <div class="container">
+        <h2> Margin Collapse</h2>
+
+        <div class="box box1">
+            Box 1 
+        </div>
+
+        <div class="box box2">
+            Box 2 
+        </div>
+
+        
+    </div>
+
+    <div class="container">
+        <h2> No Margin Collapse</h2>
+
+        <div class="parent">
+            <div class="child">
+                Child Box
+            </div>
+        </div>
+
+    </div> 
+    
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS z-index </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+            padding: 10px;
+        }
+
+        /* Red Box */
+        .box1 {
+            background-color:pink;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            border: solid black 1px;
+        }
+
+        /* Blue Box */
+        .box2 {
+            background-color: skyblue;
+            top: 60px;
+            left: 80px;
+            z-index: 2;
+            border: solid black 1px;
+        }
+
+        /* Green Box */
+        .box3 {
+            background-color: lightcyan;
+            top: 100px;
+            left: 140px;
+            z-index: 3;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS z-index</h2>
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+</body>
+</html>

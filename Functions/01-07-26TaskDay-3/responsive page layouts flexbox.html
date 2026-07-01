@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Product Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* Flex Container */
+        .products {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Product Cards */
+        .card {
+            width: 200px;
+            /* background: lightblue; */
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 15px;
+            /* background: green; */
+            color: rgb(231, 158, 69);
+            border: black solid 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Product Page</h2>
+
+<div class="products">
+
+    <div class="card">
+        <h3>Laptop</h3>
+        <p>Price: 800</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <h3>Mobile</h3>
+        <p>Price: 500</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <h3>Headphones</h3>
+        <p>Price: 100</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>

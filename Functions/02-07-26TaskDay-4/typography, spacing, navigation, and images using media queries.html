@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            body {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 22px;
+                padding: 40px;
+            }
+
+            img {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Website</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <p>This page changes based on screen size.</p>
+
+    <img src="https://picsum.photos/600/300" alt="Sample Image">
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox and Grid Alignment</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            margin:20px 0;
+        }
+
+        /* Flexbox Alignment */
+        .flex-container{
+            display:flex;
+            justify-content:center;   /* Horizontal alignment */
+            align-items:center;       /* Vertical alignment */
+            height:200px;
+            background:lightblue;
+            margin-bottom:30px;
+        }
+
+        .flex-box{
+            background:blue;
+            color:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        /* Grid Alignment */
+        .grid-container{
+            display:grid;
+            place-items:center;       /* Horizontal & Vertical alignment */
+            height:200px;
+            background:lightgreen;
+        }
+
+        .grid-box{
+            background:green;
+            color:white;
+            padding:20px;
+            border-radius:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Flexbox Alignment</h2>
+
+<div class="flex-container">
+    <div class="flex-box">
+        Centered using Flexbox
+    </div>
+</div>
+
+<h2>Grid Alignment</h2>
+
+<div class="grid-container">
+    <div class="grid-box">
+        Centered using CSS Grid
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CSS Webpages</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Flexbox */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        /* Card */
+        .card {
+            width: 200px;
+            background: white;
+            padding: 20px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            background-color: lightblue;
+            transform: scale(1.05);
+        }
+
+        /* Button */
+        button {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Media Query */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1> CSS Webpage</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>HTML</h2>
+        <p>HTML creates the webpage structure.</p>
+        <button>Learn More</button>
+    </div>
+
+    <div class="card">
+        <h2>CSS</h2>
+        <p>CSS styles the webpage beautifully.</p>
+        <button>Learn More</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Simple CSS Example</p>
+</footer>
+
+</body>
+</html>

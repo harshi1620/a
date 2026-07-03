@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS All Topics</title>
+
+<style>
+/* 1. Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* 2. CSS Variable */
+:root{
+    --main-color:#007BFF;
+}
+
+/* Body */
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+/* 3. Element Selector */
+h2{
+    color:var(--main-color);
+    margin-top:20px;
+}
+
+/* 4. ID Selector */
+#title{
+    color:red;
+    text-align:center;
+}
+
+/* 5. Class Selector */
+.box{
+    background:white;
+    border:2px solid black;
+    padding:20px;
+    margin:20px 0;
+}
+
+/* 6. Colors */
+.color{
+    color:white;
+    background:green;
+    padding:10px;
+}
+
+/* 7. Background */
+.background{
+    background:lightblue;
+    padding:10px;
+}
+
+/* 8. Border */
+.border{
+    border:5px dashed red;
+}
+
+/* 9. Margin */
+.margin{
+    margin:30px;
+}
+
+/* 10. Padding */
+.padding{
+    padding:30px;
+}
+
+/* 11. Width & Height */
+.size{
+    width:250px;
+    height:100px;
+    background:orange;
+}
+
+/* 12. Text */
+.text{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+/* 13. Font */
+.font{
+    font-family:Georgia;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* 14. Link */
+a{
+    color:blue;
+}
+
+a:hover{
+    color:red;
+}
+
+/* 15. List */
+ul{
+    list-style-type:square;
+}
+
+/* 16. Table */
+table{
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+    padding:8px;
+}
+
+/* 17. Display */
+.inline{
+    display:inline;
+    background:yellow;
+}
+
+/* 18. Position */
+.relative{
+    position:relative;
+    left:20px;
+}
+
+/* 19. Overflow */
+.overflow{
+    width:250px;
+    height:80px;
+    overflow:auto;
+    border:1px solid black;
+}
+
+/* 20. Float */
+.float{
+    float:left;
+    margin-right:10px;
+}
+
+/* Clear Float */
+.clear{
+    clear:both;
+}
+
+/* 21. Flexbox */
+.flex{
+    display:flex;
+    justify-content:space-around;
+    background:#ddd;
+    padding:10px;
+}
+
+/* 22. Grid */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.grid div{
+    background:pink;
+    padding:20px;
+}
+
+/* 23. Pseudo Class */
+button:hover{
+    background:green;
+    color:white;
+}
+
+/* 24. Pseudo Element */
+.first::first-letter{
+    font-size:35px;
+    color:red;
+}
+
+/* 25. Opacity */
+.opacity{
+    opacity:0.5;
+}
+
+/* 26. Z-index */
+.container{
+    position:relative;
+    height:100px;
+}
+
+.box1{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:red;
+    z-index:1;
+}
+
+.box2{
+    position:absolute;
+    left:40px;
+    top:20px;
+    width:100px;
+    height:100px;
+    background:blue;
+    z-index:2;
+}
+
+/* 27. Transform */
+.transform{
+    width:100px;
+    height:100px;
+    background:orange;
+    transform:rotate(15deg);
+}
+
+/* 28. Transition */
+.transition{
+    width:100px;
+    height:100px;
+    background:purple;
+    transition:1s;
+}
+
+.transition:hover{
+    width:180px;
+}
+
+/* 29. Animation */
+.animate{
+    width:60px;
+    height:60px;
+    background:red;
+    position:relative;
+    animation:move 3s infinite;
+}
+
+@keyframes move{
+    from{left:0;}
+    to{left:200px;}
+}
+
+/* 30. Shadow */
+.shadow{
+    box-shadow:5px 5px 10px gray;
+    padding:20px;
+}
+
+/* 31. Cursor */
+.cursor{
+    cursor:pointer;
+}
+
+/* 32. Object Fit */
+.fit{
+    width:200px;
+    height:150px;
+    object-fit:cover;
+}
+
+/* 33. Filter */
+.filter{
+    filter:grayscale(100%);
+}
+
+/* 34. Resize */
+textarea{
+    resize:both;
+}
+
+/* 35. Visibility */
+.hide{
+    visibility:hidden;
+}
+
+/* 36. Calc Function */
+.calc{
+    width:calc(100% - 100px);
+    background:lightgreen;
+}
+
+/* 37. Sticky */
+.sticky{
+    position:sticky;
+    top:0;
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+/* 38. Media Query */
+@media(max-width:600px){
+    body{
+        background:lightyellow;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<h1 id="title">CSS All Topics Example</h1>
+
+<div class="sticky">Sticky Navigation</div>
+
+<h2>Box Model</h2>
+<div class="box">Padding + Border + Margin</div>
+
+<h2>Colors</h2>
+<p class="color">White Text on Green Background</p>
+
+<h2>Background</h2>
+<div class="background">Background Color Example</div>
+
+<h2>Border</h2>
+<div class="border">Border Example</div>
+
+<h2>Margin & Padding</h2>
+<div class="margin">Margin Example</div>
+<div class="padding">Padding Example</div>
+
+<h2>Width & Height</h2>
+<div class="size"></div>
+
+<h2>Text Properties</h2>
+<p class="text">hello css</p>
+
+<h2>Font</h2>
+<p class="font">Font Example</p>
+
+<h2>Links</h2>
+<a href="#">Hover Me</a>
+
+<h2>List</h2>
+<ul>
+<li>Apple</li>
+<li>Banana</li>
+<li>Mango</li>
+</ul>
+
+<h2>Table</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>John</td>
+<td>20</td>
+</tr>
+</table>
+
+<h2>Display</h2>
+<span class="inline">Inline Element</span>
+
+<h2>Position</h2>
+<div class="relative">Relative Position</div>
+
+<h2>Overflow</h2>
+<div class="overflow">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem doloremque inventore voluptate quaerat reprehenderit, saepe.
+</div>
+
+<h2>Float</h2>
+<img src="https://via.placeholder.com/100" class="float">
+<p>This text wraps around the image.</p>
+
+<div class="clear"></div>
+
+<h2>Flexbox</h2>
+<div class="flex">
+<div>A</div>
+<div>B</div>
+<div>C</div>
+</div>
+
+<h2>Grid</h2>
+<div class="grid">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>
+
+<h2>Pseudo Class</h2>
+<button>Hover Me</button>
+
+<h2>Pseudo Element</h2>
+<p class="first">This is pseudo element example.</p>
+
+<h2>Opacity</h2>
+<img src="https://via.placeholder.com/150" class="opacity">
+
+<h2>Z-index</h2>
+<div class="container">
+<div class="box1"></div>
+<div class="box2"></div>
+</div>
+
+<h2>Transform</h2>
+<div class="transform"></div>
+
+<h2>Transition</h2>
+<div class="transition"></div>
+
+<h2>Animation</h2>
+<div class="animate"></div>
+
+<h2>Shadow</h2>
+<div class="shadow">Shadow Example</div>
+
+<h2>Cursor</h2>
+<button class="cursor">Pointer Cursor</button>
+
+<h2>Object Fit</h2>
+<img src="https://via.placeholder.com/300x200" class="fit">
+
+<h2>Filter</h2>
+<img src="https://via.placeholder.com/150" class="filter">
+
+<h2>Resize</h2>
+<textarea rows="4" cols="30"></textarea>
+
+<h2>Visibility</h2>
+<p class="hide">You cannot see this text.</p>
+
+<h2>Calc Function</h2>
+<div class="calc">Width using calc()</div>
+
+</body>
+</html>

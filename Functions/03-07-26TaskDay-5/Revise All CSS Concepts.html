@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: linear-gradient(to right, lightblue, lightpink);
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    
+    h1 {
+      color: brown;
+      background-color: plum;
+      text-align: center;
+      padding: 15px;
+    }
+    
+    nav {
+      background: darkslateblue;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    
+    .a{ 
+        color: red; 
+    }
+    p { 
+        color: navy; 
+    }
+    #b { 
+        color: green; 
+    }
+    .c { 
+        color: orange !important; 
+    }
+
+    
+    .d {
+      margin: 20px;
+      padding: 15px;
+      border: 2px solid black;
+      width: 200px;
+    }
+
+    
+    .e {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      margin: 10px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    
+    .positioned {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      background: lightgreen;
+      z-index: 2;
+      padding: 10px;
+    }
+
+    
+    .f {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: aquamarine;
+      height: 120px;
+      margin: 20px 0;
+    }
+
+    
+    .g {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background: bisque;
+      padding: 10px;
+    }
+    .h {
+      background: lightcoral;
+      text-align: center;
+      padding: 20px;
+    }
+
+    
+    @media (max-width: 600px) {
+      body { 
+        background: lightyellow; 
+    }
+      nav ul { 
+        flex-direction: column; 
+    }
+      .f { 
+        flex-direction: column; 
+    }
+      .g { 
+        grid-template-columns: 1fr; 
+    }
+    }
+
+    
+    footer {
+      background: darkslateblue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Header</h1>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Topics</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <p>This is a <span class="a">highlighted</span> word.</p>
+  <p id="b">This uses an ID selector.</p>
+  <p class="c">This text is forced orange with !important.</p>
+
+  <div class="d">Box Model Example</div>
+
+  <div class="e">Float 1</div>
+  <div class="e">Float 2</div>
+  
+
+  <div class="f">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+    <div>Flex Item 3</div>
+  </div>
+
+  <div class="g">
+    <div class="h">Grid 1</div>
+    <div class="h">Grid 2</div>
+    <div class="h">Grid 3</div>
+  </div>
+
+  <footer>Footer</footer>
+</body>
+</html>

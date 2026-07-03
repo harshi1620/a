@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Specificity </title>
+
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector (higher specificity than element) */
+        .text {
+            color: green;
+        }
+
+        /* ID Selector (higher specificity than class) */
+        #message {
+            color: red;
+        }
+
+        /* !important overrides all of the above */
+        .important {
+            color: purple !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is a normal paragraph (Blue).</p>
+
+    <p class="text">
+        This paragraph uses a class (Green).
+    </p>
+
+    <p id="message" class="text">
+        This paragraph uses an ID and a class (Red because ID has higher specificity).
+    </p>
+
+    <p id="message" class="text important">
+        This paragraph uses !important (Purple because !important overrides other rules).
+    </p>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-import Child from "./Child";
+import Child from "./Child" 
 
 function Parent() {
   return (
@@ -9,7 +9,7 @@ function Parent() {
       <Child name="Anil" age={20} />
       <Child name="Devi" age={25} />
     </div>
-  );
+  )
 }
 
-export default Parent;
+export default Parent

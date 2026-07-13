@@ -1,38 +1,24 @@
 import { useState } from 'react'
 import './App.css'
-import App1 from './09-07-26th TaskDay4/ContextApi/App'
-import LocalStateCounter from './09-07-26th TaskDay4/ContextApi/LocalStateCounter'
-import ObjectSharing from './09-07-26th TaskDay4/ContextApi/ObjectSharing'
-import App2 from './09-07-26th TaskDay4/ContextApiImplementation/App'
-import App3 from './09-07-26th TaskDay4/ContextApiImplementation/CounterContext/App'
-import App4 from './09-07-26th TaskDay4/ContextApiImplementation/NestedComonents/App'
-import User from './09-07-26th TaskDay4/GlobalState/User'
-import DemostrateLocalState from './09-07-26th TaskDay4/LocalState/DemostrateLocalState'
-import EventBasedUpdates from './09-07-26th TaskDay4/LocalState/EventBasedUpdates'
-import InputLocalState from './09-07-26th TaskDay4/LocalState/InputLocalState'
-import LocalState from './09-07-26th TaskDay4/LocalState/LocalState'
-import UpdateLocalState from './09-07-26th TaskDay4/LocalState/UpdateLocalState'
-import Theme from './09-07-26th TaskDay4/LocalVsGlobalState/Theme'
+import AuthProvider from './13-07-26th TaskDay1/Authentication usingContextAPI/AuthProvider'
+import User from './13-07-26th TaskDay1/ConfigureContextApiaReact Appli/User'
+import EmployeeProvider from './13-07-26th TaskDay1/MultipleSharingUsingContextApi/EmployeeProvider'
+import ThemeProvider from './13-07-26th TaskDay1/ProviderConsumers/ThemeProvider'
+import LanguageProvider from './13-07-26th TaskDay1/useContext()hook acce sharedData/LanguageProvider'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <App1/>
-      <LocalStateCounter/>
-      <ObjectSharing/>
-      <App2/>
-      <App3/>
-      <App4/>
+      <AuthProvider/>
       <User/>
-      <DemostrateLocalState/>
-      <EventBasedUpdates/>
-      <EventBasedUpdates/>
-      <InputLocalState/>
-      <LocalState/>
-      <UpdateLocalState/>
-      <Theme/>
+      <EmployeeProvider/>
+      <ThemeProvider/>
+      <LanguageProvider/>
+
     </>
   
   )

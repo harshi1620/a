@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import AuthProvider from './13-07-26th TaskDay1/Authentication usingContextAPI/AuthProvider'
-import User from './13-07-26th TaskDay1/ConfigureContextApiaReact Appli/User'
-import EmployeeProvider from './13-07-26th TaskDay1/MultipleSharingUsingContextApi/EmployeeProvider'
-import ThemeProvider from './13-07-26th TaskDay1/ProviderConsumers/ThemeProvider'
-import LanguageProvider from './13-07-26th TaskDay1/useContext()hook acce sharedData/LanguageProvider'
+import { Provider } from 'react-redux'
+import Counter from './14-07-26TaskDay2/Redux/Counter'
+import { store } from './14-07-26TaskDay2/Redux/Store'
+import { store2 } from './14-07-26TaskDay2/CreateSlicesUsingRedux/Store'
+import { store3 } from './14-07-26TaskDay2/UpdatingAndAcessingGlobalState/Store'
+import Student from './14-07-26TaskDay2/CreateSlicesUsingRedux/Student'
+import Light from './14-07-26TaskDay2/UpdatingAndAcessingGlobalState/Light'
+import A from './10-07-2026TaskDay5/ApiUsingAxios/A'
+
 
 
 
@@ -13,12 +17,16 @@ function App() {
 
   return (
     <>
-      <AuthProvider/>
-      <User/>
-      <EmployeeProvider/>
-      <ThemeProvider/>
-      <LanguageProvider/>
-
+    <A/>
+      {/* <Provider store={store}>
+        <Counter/>        
+      </Provider>
+      <Provider store={store2}>
+        <Student/>
+      </Provider>
+      <Provider store={store3}>
+        <Light/>
+      </Provider> */}
     </>
   
   )

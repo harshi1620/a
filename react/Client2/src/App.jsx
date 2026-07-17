@@ -1,24 +1,21 @@
 import { useState } from 'react'
 import './App.css'
-import LocalState from './16-07-26TaskDay4/DemonstratingConcepts/LocalState/LocalState'
-import SharedState from './16-07-26TaskDay4/DemonstratingConcepts/ContextApi/SharedState'
 import { Provider } from 'react-redux'
-import Counter from './16-07-26TaskDay4/DemonstratingConcepts/Redux/Counter'
-import { store } from './16-07-26TaskDay4/DemonstratingConcepts/Redux/Store'
-import User from './16-07-26TaskDay4/PreviousConcepts/User'
-
+import Parent from './17-07-26 TaskDay5/ExamplesForMajorConcept/PropDrilling/Parent'
+import UseState from './17-07-26 TaskDay5/ExamplesForMajorConcept/UseState/UseState'
+import {store} from './17-07-26 TaskDay5/ExamplesForMajorConcept/Redux/Store'
+import Counter from './17-07-26 TaskDay5/ExamplesForMajorConcept/Redux/Counter'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <LocalState/>
-    <SharedState/>
+    <Parent name='Harshitha'/>
+    <UseState/>
     <Provider store={store}>
       <Counter/>
     </Provider>
-    <User/>
     </>
   
   )

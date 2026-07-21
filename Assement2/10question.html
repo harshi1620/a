@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src=""id="slider" alt="">
+    <script>
+        let image=[
+            "https://picsum.photo/id/1015/400/250"
+        ]
+        
+        let index = 0
+        function next(){
+            index++
+            if(index ==image.lenght){
+                index=0
+            }
+        
+        document.getElementById("slider").src=images[index]
+        }
+        function previous(){
+            index--
+            if(index<0){
+                index=image.lenght-1
+            }
+            document.getElementById("slider").scr=images[index]
+        }
+        setInterval(next,3000)
+    </script>
+</body>
+</html>

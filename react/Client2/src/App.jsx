@@ -1,15 +1,12 @@
 import { useState } from 'react'
 import './App.css'
 import { Provider } from 'react-redux'
-import ControlledForm from './22-07-26TaskDay3/controlledcomponentsusingReact State/ControlledForm'
-import DynamicInput from './22-07-26TaskDay3/Handle input fields dynamically/DynamicInput'
-import ValidationForm from './22-07-26TaskDay3/PerformformValidation/ValidationForm'
-import DynamicForm from './22-07-26TaskDay3/DisplayFormErrorsDynamically/DynamicForm'
-import HandleInput from './22-07-26TaskDay3/Handlemultipleinputfields/HandleInput'
-import FormExample from './22-07-26TaskDay3/ImplementTextarea,scrolldown/ForExample'
-import RegistrationForm from './22-07-26TaskDay3/Mini Task/RegistrationForm'
-// import RegistrationForm from './22-07-26TaskDay3/RegistrationFormwithvalidations/RegistrationForm'
-
+import AuthHOC from './23-07-26TaskDay4/Implement/AuthHOC'
+import Home from './23-07-26TaskDay4/Implement/Home'
+import Loading from './23-07-26TaskDay4/Implement/Loading'
+import Admin from './23-07-26TaskDay4/Implement/Admin'
+import Users from './23-07-26TaskDay4/Mini/Users'
+import Home2 from './23-07-26TaskDay4/resubleHOC/Home'
 
 
 
@@ -18,14 +15,11 @@ function App() {
 
   return (
     <>
-    
-    <ControlledForm/>
-    <DynamicInput/>
-    <ValidationForm/>
-    <DynamicForm/>
-    <HandleInput/>
-    <FormExample/>
-    <RegistrationForm/>
+    <Home/>
+    <Loading/>
+    <Admin/>
+    <Users/>
+    <Home2/>
     
     </>
   

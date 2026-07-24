@@ -1,25 +1,20 @@
 import { useState } from 'react'
 import './App.css'
 import { Provider } from 'react-redux'
-import AuthHOC from './23-07-26TaskDay4/Implement/AuthHOC'
-import Home from './23-07-26TaskDay4/Implement/Home'
-import Loading from './23-07-26TaskDay4/Implement/Loading'
-import Admin from './23-07-26TaskDay4/Implement/Admin'
-import Users from './23-07-26TaskDay4/Mini/Users'
-import Home2 from './23-07-26TaskDay4/resubleHOC/Home'
-
-
+import ExampleConcept from './24-07-26TaskDay5/ExamplesConcept'
+import DocumentUseCase from './24-07-26TaskDay5/DocumentUseCase'
+// import withGreeting from './24-07-26TaskDay5/withGreeting'
+import WithGreeting from './24-07-26TaskDay5/withGreeting'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Home/>
-    <Loading/>
-    <Admin/>
-    <Users/>
-    <Home2/>
+    <ExampleConcept/>
+    <DocumentUseCase/>
+    <WithGreeting/>
+
     
     </>
   

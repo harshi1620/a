@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import { Provider } from 'react-redux'
-import EventBinding from './30-07-26TaskDay-4/EventBinding'
-import Eventhandler from './30-07-26TaskDay-4/Eventhandler'
-import EventLoginForm from './30-07-26TaskDay-4/EventLoginForm'
-import Apper from './30-07-26TaskDay-4/Mini/Apper'
-import Modal2 from './30-07-26TaskDay-4/Portal/Modal'
-import ToolTip from './30-07-26TaskDay-4/Portal/ToolTip'
+import DynamicMap from './31-07-26TaskDay-5/DynamicMap'
+import NestedLists from './31-07-26TaskDay-5/NestedLists'
+import ConditionalRendering from './31-07-26TaskDay-5/ConditionalRendering'
+import ObjectDestructuring from './31-07-26TaskDay-5/ObjectDestructuring'
+import ArrayDestructuring from './31-07-26TaskDay-5/ArrayDestructuring'
+import DestructurePropsState from './31-07-26TaskDay-5/DestructurePropsState'
+import DestructureFunctionalParameters from './31-07-26TaskDay-5/DestructureFunctionalParameters'
+import Loader from './31-07-26TaskDay-5/LazyLoading/Loader'
+import Loader2 from './31-07-26TaskDay-5/LazyLoading/Loader2'
 
 
 
@@ -18,12 +21,15 @@ function App() {
 
   return (
     <>
-    <EventBinding/>
-    <Eventhandler/>
-    <EventLoginForm/>
-    <Apper/>
-    <Modal2/>
-    <ToolTip/>
+    <DynamicMap/>
+    <NestedLists/>
+    <ConditionalRendering/>
+    <ObjectDestructuring/>
+    <ArrayDestructuring/>
+    <DestructurePropsState/>
+    <DestructureFunctionalParameters/>
+    <Loader/>
+    <Loader2/>
     </>
   
   )

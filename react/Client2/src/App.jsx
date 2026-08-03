@@ -1,15 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { Provider } from 'react-redux'
-import DynamicMap from './31-07-26TaskDay-5/DynamicMap'
-import NestedLists from './31-07-26TaskDay-5/NestedLists'
-import ConditionalRendering from './31-07-26TaskDay-5/ConditionalRendering'
-import ObjectDestructuring from './31-07-26TaskDay-5/ObjectDestructuring'
-import ArrayDestructuring from './31-07-26TaskDay-5/ArrayDestructuring'
-import DestructurePropsState from './31-07-26TaskDay-5/DestructurePropsState'
-import DestructureFunctionalParameters from './31-07-26TaskDay-5/DestructureFunctionalParameters'
-import Loader from './31-07-26TaskDay-5/LazyLoading/Loader'
-import Loader2 from './31-07-26TaskDay-5/LazyLoading/Loader2'
+import Router from './03-08-26TaskDay1/Router/Router'
+import { BrowserRouter } from 'react-router-dom'
+import Router2 from './03-08-26TaskDay1/RoutesRoute/Router2'
+import Router3 from './03-08-26TaskDay1/Mini/Router3'
 
 
 
@@ -21,15 +16,11 @@ function App() {
 
   return (
     <>
-    <DynamicMap/>
-    <NestedLists/>
-    <ConditionalRendering/>
-    <ObjectDestructuring/>
-    <ArrayDestructuring/>
-    <DestructurePropsState/>
-    <DestructureFunctionalParameters/>
-    <Loader/>
-    <Loader2/>
+    <BrowserRouter>
+        <Router/>
+        <Router2/>
+        <Router3/>
+    </BrowserRouter>
     </>
   
   )
